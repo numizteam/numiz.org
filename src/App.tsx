@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import './App.css';
 
-import { About, Index } from './pages';
+import { /*About, */Index } from './pages';
 
 function App() {
   return (
