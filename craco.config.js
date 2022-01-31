@@ -1,3 +1,4 @@
+require('dotenv').config();
 /* 
 // Craco overrides API
 // Detailes here: https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md#configuration
@@ -18,5 +19,6 @@ module.exports = function({env}) {
   whenDev(() => console.log('Config overrides: Development'))
   whenProd(() => console.log('Config overrides: Production'))
   whenTest(() => console.log('Config overrides: Testing'))
+  console.log({env})
   return {}
 }
