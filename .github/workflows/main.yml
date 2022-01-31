@@ -23,6 +23,7 @@ jobs:
           export PPUBLIC_URL=https://numizteam.github.io/landing/
           env
           yarn run build
+          # TODO: write assets paths replacement script and apply it here
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.2
