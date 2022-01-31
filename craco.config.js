@@ -19,6 +19,6 @@ module.exports = function({env}) {
   whenDev(() => console.log('Config overrides: Development'))
   whenProd(() => console.log('Config overrides: Production'))
   whenTest(() => console.log('Config overrides: Testing'))
-  console.log({env})
-  return {}
+  console.log(process.env)
+  return process.env
 }
