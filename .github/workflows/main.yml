@@ -28,6 +28,5 @@ jobs:
           repository-name: numizteam/numizteam.github.io
           branch: main
           folder: build
-          target-folder: landing
           clean: true
           ssh-key: ${{ secrets.DEPLOY_KEY }}

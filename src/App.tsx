@@ -2,13 +2,13 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import './App.css';
 
-import { /*About, */Index } from './pages';
+import { /*bout, */Index } from './pages';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/landing">
+        <Route path="/">
           <Route index element={<Index/>} />
           {/* <Route path="about" element={<About/>} /> */}
         </Route>
