@@ -11,3 +11,156 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main {
+  overflow: hidden;
+  display: block;
+}
+
+section {
+  position: relative;
+  display: block;
+}
+
+.container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container, .container-fluid {
+  z-index: 5;
+  position: relative;
+}
+.h-100 {
+  height: 100%!important;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x)/ 2);
+  padding-left: calc(var(--bs-gutter-x)/ 2);
+  margin-top: var(--bs-gutter-y);
+}
+
+.main-section__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.section-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: FuturaBold, sans-serif;
+}
+
+.h1, h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.custom-button {
+  height: 52px;
+  display: flex;
+  padding: 15px 30px;
+  border-radius: 8px;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  background-color: #d8a041;
+  transition: all .4s ease-in-out;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+button, input, option, select, textarea {
+  padding: 0;
+  border: none;
+  outline: none!important;
+  box-shadow: none!important;
+  background-color: transparent;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border-radius: 0;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+img, svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+img, svg {
+  vertical-align: middle;
+}
